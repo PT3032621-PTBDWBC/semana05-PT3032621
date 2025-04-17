@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Aplica estilo apenas ao formulário do evento */
+    #form-evento {
+      border: 2px solid black;
+      padding: 5px;
+      width: 100;
+      margin: 10px auto;
+    }
+
+    fieldset {
+      border: 2px solid black;
+      width: 100;
+      padding: 10px;
+      margin: 10px auto;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    
+    input[type="email"], input[type="email"] {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form id="form-evento">
+  Evento:
+  <select name="evento">
+    <option value="selecione">-- Selecione --</option>
+    <option value="voe sem asas">Voe sem asas</option>
+    <option value="festa junina">Festa Junina</option>
+    <option value="semana da técnologia">Semana da Tecnologia</option>
+  </select>
+</form> 
+
+<form action="/seu-destino" method="post">
+  <fieldset>
+    <legend>Informações de Acesso</legend>
+    <label for="usuario">Usuário</label>
+    <input type="text" id="usuario" name="usuario">
+	<br>
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" name="senha">
+    <br>
+
+    <label for="confirmarSenha">Confirme a Senha</label>
+    <input type="password" id="confirmarSenha" name="confirmarSenha"><br>
+
+	</fieldset>
+
+<form action="/seu-destino" method="post">
+  <fieldset>
+    <legend>Informações Pessoais</legend>
+    <label for="nome">Nome Completo</label>
+    <input type="text" id="usuario" name="usuario">
+    <br>
+    <label for="input_email">E-mail</label>
+    <input type="email"  name="email" id="input_email">
+    <br>
+    <label for="celular">Celular</label>
+    <input type="text" id="celular" name="celular"><br>
+
+    
+  </fieldset>
+</form>
+
+</body>
+</html>
