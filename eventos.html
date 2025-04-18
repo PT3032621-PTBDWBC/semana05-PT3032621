@@ -54,14 +54,14 @@
   <fieldset>
     <legend>Informações de Acesso</legend>
     <label for="usuario">Usuário</label>
-    <input type="text" id="usuario" name="usuario">
+    <input type="text" id="usuario" name="usuario" required>
 	<br>
     <label for="senha">Senha</label>
-    <input type="password" id="senha" name="senha">
+    <input type="password" id="senha" name="senha" required>
     <br>
 
     <label for="confirmarSenha">Confirme a Senha</label>
-    <input type="password" id="confirmarSenha" name="confirmarSenha"><br>
+    <input type="password" id="confirmarSenha" name="confirmarSenha" required><br>
 
 	</fieldset>
 
@@ -69,13 +69,13 @@
   <fieldset>
     <legend>Informações Pessoais</legend>
     <label for="nome">Nome Completo</label>
-    <input type="text" id="usuario" name="usuario">
+    <input type="text" id="usuario" name="usuario"required>
     <br>
     <label for="input_email">E-mail</label>
-    <input type="email"  name="email" id="input_email">
+    <input type="email"  name="email" id="input_email"required>
     <br>
     <label for="celular">Celular</label>
-    <input type="text" id="celular" name="celular">
+    <input type="text" id="celular" name="celular"required>
 	<span>(99) 99999-9999</span>
     <fieldset>
     <legend>Sexo</legend>
@@ -96,9 +96,10 @@
 
     
   </fieldset>
-</form>
- 	<input type="submit" value="Inscrever">
+    <input type="submit" value="Inscrever">
     <input type="reset" value="Limpar">
+</form>
+ 	
 
 </body>
 </html>
